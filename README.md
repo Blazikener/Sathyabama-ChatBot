@@ -4,9 +4,6 @@ This document provides instructions on how to set up and run the Sathyabama AI A
 
 Project Structure
 
-Plain Text
-
-
 sathyabama_ai_assistant/
 ├── data/                       # Contains sample data for syllabus, admission, food menu, bus details
 │   ├── syllabus.txt
