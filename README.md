@@ -2,48 +2,22 @@ Sathyabama AI Assistant - Setup and Usage Guide
 
 This document provides instructions on how to set up and run the Sathyabama AI Assistant chatbot.
 
-Project Structure
-
-sathyabama_ai_assistant/
-├── data/                       # Contains sample data for syllabus, admission, food menu, bus details
-│   ├── syllabus.txt
-│   ├── admission_details.txt
-│   ├── food_menu.csv
-│   └── bus_details.csv
-├── .env                        # Environment variables (e.g., GROQ_API_KEY)
-├── main.py                     # Main application file for the chatbot
-├── prompts.py                  # Defines prompts and system messages for the chatbot
-├── vector_db_manager.py        # Manages vector database creation and loading
-├── lead_collector.py           # Handles lead collection and information extraction
-├── ingest_data.py              # Script to ingest data into vector databases
-└── requirements.txt            # Python dependencies
-
 
 Setup Instructions
 
-1.
-Unzip the project:
-
-2.
-Set up environment variables:
+1. Set up environment variables:
 Open the .env file and replace your_groq_api_key_here with your actual Groq API key.
 
-3.
-Install dependencies:
+2. Install dependencies:
 
-4.
-Ingest data:
+3. Ingest data:
 Run the data ingestion script to create and populate the vector databases. This step will create syllabus_index, admission_index, food_menu_index, and bus_details_index directories.
 
 Usage
 
 To start the Sathyabama AI Assistant, run the main.py file:
 
-Bash
-
-
 python3 main.py
-
 
 The chatbot will greet you, and you can start asking questions related to Sathyabama University. You can type exit to end the conversation or admin to view collected leads.
 
@@ -66,7 +40,7 @@ Example Queries:
 
 Lead Collection
 
-The chatbot is designed to indirectly collect user information (name, registration number, phone, email, department, year) during the conversation. This information is saved in data/collected_leads.json.
+The chatbot is designed to collect user information (name, registration number, phone, email, department, year) during the conversation. This information is saved in data/collected_leads.json.
 
 To view the collected leads during a conversation, type admin when prompted for input.
 
