@@ -1,0 +1,7 @@
+llama-index
+llama-index-llms-groq
+python-dotenv
+pandas
+llama-index-readers-file
+llama-index-embeddings-huggingface
+
