@@ -214,7 +214,7 @@ class SathyabamaAIAssistant:
                 if user_input.lower() in ['exit', 'quit', 'bye']:
                     # Save final lead information
                     self.lead_collector.save_lead()
-                    print("\n Assistant: Thank you for using Sathyabama University AI Assistant! Have a great day! 🎓")
+                    print("\n Assistant: Thank you for using Sathyabama University AI Assistant! Have a great day!")
                     break
                 
                 elif user_input.lower() == 'admin':
